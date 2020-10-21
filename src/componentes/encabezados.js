@@ -1,7 +1,4 @@
-import React from 'react'
-
-function  Headers(){
- const   header={
+exports.headers = {
     Analisis: {
         "asignacion.xlsx": [
             [
@@ -158,9 +155,13 @@ function  Headers(){
                 "|",
                 83,
                 "|",
+                undefined,
                 "|",
+                undefined,
                 "|",
+                undefined,
                 "|",
+                undefined,
                 "|",
                 "co79659001",
                 "|",
@@ -1870,11 +1871,28 @@ function  Headers(){
             [
                 "Workertag",
                 "feb",
+                undefined,
                 "mar",
+                undefined,
+                undefined,
+                undefined,
                 "abr",
+                undefined,
                 "may",
+                undefined,
+                undefined,
+                undefined,
+                undefined,
                 "jun",
+                undefined,
+                undefined,
+                undefined,
                 "jul",
+                undefined,
+                undefined,
+                undefined,
+                undefined,
+                undefined,
                 "Total general"
             ]
         ],
@@ -2252,12 +2270,4 @@ function  Headers(){
             ]
         ]
     },
-}
-
 };
-    
-      
- 
-
-
-export default Headers

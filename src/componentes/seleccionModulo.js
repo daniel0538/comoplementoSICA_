@@ -13,28 +13,18 @@ class Modulo extends Component {
     }
 
     this.definirValue = this.definirValue.bind(this);
-    this.evento = this.evento.bind(this);
   }
-
 
   definirValue(event) {
     this.setState({ value1: event.target.value })
 
   }
 
-  evento(event) {
-
-    alert(this.state.value1)
-    event.preventDefault();
-  }
-  modulo = 'Analisis'
   render() {
-
     return (
-
       <div>
-        <form onSubmit={this.evento}>
-          <InputLabel id="demo-controlled-open-select-label" >Seleccione un modulo</InputLabel>
+        <form>
+          <InputLabel style={{color:'white',marginTop:'20px'}} id="demo-controlled-open-select-label" >Seleccione un modulo</InputLabel>
           <Select labelId="demo-controlled-open-select-label" 
           style={{ width: '300px' }} 
           value={this.state.value1} 
@@ -48,12 +38,10 @@ class Modulo extends Component {
             <MenuItem value='Storia'> Storia</MenuItem>
           </Select>
         </form><br />
-        <ExcelToJson name={this.state.value1} />
+        <ExcelToJson modulo={this.state.value1} />
       </div>
-
     )
   }
-
 }
 
 export default Modulo

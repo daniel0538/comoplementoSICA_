@@ -7,7 +7,7 @@ function App(){
 
     return (
       <div className='estilo2'>
-      <img style={{width:'700px'}} src='https://www.comsistelco.com/assets/images/logo_web.png'/>
+      <img alt='log comsistelco' style={{width:'500px'}} src='https://www.comsistelco.com/assets/images/logo_web.png'/>
       <div className='estilo1'> 
         <Modulo/>
       </div>
