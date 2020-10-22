@@ -2059,7 +2059,7 @@ exports.headers = {
             [
                 "OT",
                 "ID_COD_TRA",
-                "FECHA_RECEPCION",
+                "FECHA_RECPECION",
                 "FECHA_SEGUIMIENTO",
                 "ACCION",
                 "ESTADO"

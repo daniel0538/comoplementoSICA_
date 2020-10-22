@@ -24,11 +24,12 @@ class Modulo extends Component {
     return (
       <div>
         <form>
-          <InputLabel style={{color:'white',marginTop:'20px'}} id="demo-controlled-open-select-label" >Seleccione un modulo</InputLabel>
-          <Select labelId="demo-controlled-open-select-label" 
-          style={{ width: '300px' }} 
-          value={this.state.value1} 
-          onChange={this.definirValue}>
+          <InputLabel style={{ color: 'white', marginTop: '20px' }} id="label" >Seleccione un modulo</InputLabel>
+          <Select 
+            labelId="label"
+            style={{ width: '300px' }}
+            value={this.state.value1}
+            onChange={this.definirValue}>
             <MenuItem value='Analisis'>Analisis </MenuItem>
             <MenuItem value='Balance macromedicion'> Balance macromedicion</MenuItem>
             <MenuItem value='Hallazgos'> Hallazgos</MenuItem>

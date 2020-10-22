@@ -3,7 +3,6 @@ import * as XLSX from "xlsx";
 import Validar from './validacion'
 import '../styles/estilos.css'
 import TextField from '@material-ui/core/TextField';
-import Modal from '@material-ui/core/Modal';
 
 class ExcelToJson extends React.Component {
 
@@ -22,7 +21,7 @@ class ExcelToJson extends React.Component {
 
   handleChange(e) {
     const files = e.target.files;
-    if (files && files[0]) this.setState({ file: files[0] });
+    this.setState({ file: files[0] });
   };
 
 
@@ -65,21 +64,18 @@ class ExcelToJson extends React.Component {
     return (
       <div>
         <form>
-        <TextField type="file"
-          className="archivo"
+        <TextField 
+          type="file"
           id="file"
           onChange={this.handleChange} 
           required/>
         <br/><br/> 
-        <input type='submit'
+        <input 
+          type='submit'
           className="enviar"
           value="Validar"  
           onClick={this.handleFile}/>
         </form>
-        <p>{this.state.espera}</p>
-        <Modal style={{background: 'red'}} ref={"modal1"}>
-          <h1>Hola</h1>
-        </Modal>
       </div>
 
     )
